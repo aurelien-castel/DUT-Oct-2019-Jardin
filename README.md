@@ -26,7 +26,7 @@ Sous linux:
 make
 ```
 ## Résumé du projet
-Le projet avait pour but de créer une application de gestion de jardin en suivant le modèle MVC. Les données sont sauvegardées via une base de données. L'utilisateur peut en premier créer un jardin (fig.1) et y accéder (fig.2). Il peut ensuite parcourir son jardin, le séparer en parcelles, y planter des légumes, effectuer des actions sur ses parcelles, ajouter de nouveaux légumes (fig.3). Toutes les actions effectuées sur le jardin sont récapitulées sur un calendrier (fig.4 et 5)
+Le projet avait pour but de créer une application de gestion de jardin en suivant le modèle MVC. Les données sont sauvegardées via une base de données. L'utilisateur peut en premier créer un jardin et y accéder. Il peut ensuite parcourir son jardin, le séparer en parcelles, y planter des légumes, effectuer des actions sur ses parcelles, ajouter de nouveaux légumes. Toutes les actions effectuées sur le jardin sont récapitulées sur un calendrier
 
 ## Images du projet
 | ![https://github.com/aurelien-castel/DUT-Oct-2019-Jardin/blob/master/images/1.PNG?raw=true](https://github.com/aurelien-castel/DUT-Oct-2019-Jardin/blob/master/images/1.PNG?raw=true) | 
