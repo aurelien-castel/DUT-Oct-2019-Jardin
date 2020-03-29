@@ -1,37 +1,50 @@
+# Mode d'emploi
+- [Mode d'emploi](#mode-demploi)
+  - [Installation](#installation)
+  - [Utilisation](#utilisation)
+  - [Résumé du projet](#r%c3%a9sum%c3%a9-du-projet)
+  - [Images du projet](#images-du-projet)
 
-#### Chemin du make file: /Projet/makefile
-# Jardins
+## Installation
+Mode d'emploi d'installation:
+- installez les fichiers SQL dans /projet/models/fichier SQL/ sur votre base de données
+- changez le fichier /projet/models/Config_bd.java avec vos identifiants de votre base de données
+## Utilisation
+Allez dans le répertoire projet<br /> 
+Sous windows:
+```bash
+del /s *.class
+```
+```bash
+javac .\Main.java
+```
+```bash
+java -cp ".;models/mariadb-client.jar" Main
+```
+Sous linux:
+```bash
+make
+```
+## Résumé du projet
+Le projet avait pour but de créer une application de gestion de jardin en suivant le modèle MVC. Les données sont sauvegardées via une base de données. L'utilisateur peut en premier créer un jardin (fig.1) et y accéder (fig.2). Il peut ensuite parcourir son jardin, le séparer en parcelles, y planter des légumes, effectuer des actions sur ses parcelles, ajouter de nouveaux légumes (fig.3). Toutes les actions effectuées sur le jardin sont récapitulées sur un calendrier (fig.4 et 5)
 
-## Contexte
-Le projet concerne une version des jardins proche de celle entrevue en préprojet.
-La seule différence fondamentale est que les parcelles ne sont pas conservées dans le temps : une parcelle fermée n'existera plus dans le système.
+## Images du projet
+| ![https://github.com/aurelien-castel/DUT-Oct-2019-Jardin/blob/master/images/1.PNG?raw=true](https://github.com/aurelien-castel/DUT-Oct-2019-Jardin/blob/master/images/1.PNG?raw=true) | 
+|:--:| 
+| Création jardin |
 
+| ![https://github.com/aurelien-castel/DUT-Oct-2019-Jardin/blob/master/images/2.PNG?raw=true](https://github.com/aurelien-castel/DUT-Oct-2019-Jardin/blob/master/images/2.PNG?raw=true) | 
+|:--:| 
+| Navigation dans les différents jardins |
 
+| ![https://github.com/aurelien-castel/DUT-Oct-2019-Jardin/blob/master/images/3.PNG?raw=true](https://github.com/aurelien-castel/DUT-Oct-2019-Jardin/blob/master/images/3.PNG?raw=true) | 
+|:--:| 
+| Fenêtre principale sur un jardin |
 
-Pour les parcelles on dispose d'une API avec plusieurs classes abstraites et interfaces.
-La grande majorité des classes concrètes proposées ne sont pas persistantes mais la machinerie abstraite vous permet d'utiliser vos propres classes qui permettraient cette persistance (par exemple avec une base de données). Un exemple partiel de connexion à une base de donné est donné pour les légumes.
+| ![https://github.com/aurelien-castel/DUT-Oct-2019-Jardin/blob/master/images/4.PNG?raw=true](https://github.com/aurelien-castel/DUT-Oct-2019-Jardin/blob/master/images/4.PNG?raw=true) | 
+|:--:| 
+| Calendrier des différentes actions d'un jardin |
 
-- Parcelle                interface, élément central de l'API
-- AbstractJardinFactory   Abstraite, API pour la création de la parcelle racine d'un nouveau jardin.
-- Orientation             enum
-- ParcelleJ               implantation en java (sans BD et sans persistance) de Parcelle.
-- JardinFactoryJ          implantation en java (sans BD et sans persistance) de AbstractJardinFactory
-
-C'est similaire pour les légumes.
-
-- Legume                  interface
-- AbstractLegumeFactory   abstrait, API pour la gestion des légumes 
-- LegumeFactoryJ          implantation en java (sans BD et sans persistance) de AbstractLegumeFactory.
-- LegumeJ                 implantation en java (sans BD et sans persistance) de Legume.
-- LegumeFactoryBD         implantation partielle en java (avec BD et persistance) de AbstractLegumeFactory.
-- FamilleLegume           enum
-- Legumes.sql             code compatible avec LegumeFactoryBD proposant une table pour les légumes.
-
-Les actions ne sont pas très compliquées.
-
-- Action             abstraite
-- ActionLegume       concrets
-- ActionSol          concrets
-- ActionLegumeType   enum
-- ActionSolType      enum
-
+| ![https://github.com/aurelien-castel/DUT-Oct-2019-Jardin/blob/master/images/5.PNG?raw=true](https://github.com/aurelien-castel/DUT-Oct-2019-Jardin/blob/master/images/5.PNG?raw=true) | 
+|:--:| 
+| Le récapitulatif des actions effectuées pour une certaine date sur un jardin |

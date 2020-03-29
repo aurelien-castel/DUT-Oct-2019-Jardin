@@ -1,5 +1,5 @@
 ### VARIABLES ###
-JFLAGS=  -encoding UTF8 -implicit:none
+JFLAGS=-encoding UTF8 -implicit:none
 JC=javac
 JVM=java -cp ".;models/mariadb-client.jar"
 APP_NAME=Jardin
