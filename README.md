@@ -30,15 +30,15 @@ Le projet avait pour but de créer une application de gestion de jardin en suiva
 
 ## Images du projet
 | ![https://github.com/aurelien-castel/DUT-Oct-2019-Jardin/blob/master/images/1.PNG?raw=true](https://github.com/aurelien-castel/DUT-Oct-2019-Jardin/blob/master/images/1.PNG?raw=true) | 
-|:--:| 
+| :--: | 
 | Création jardin |
 
 | ![https://github.com/aurelien-castel/DUT-Oct-2019-Jardin/blob/master/images/2.PNG?raw=true](https://github.com/aurelien-castel/DUT-Oct-2019-Jardin/blob/master/images/2.PNG?raw=true) | 
-|:--:| 
+| :--: | 
 | Navigation dans les différents jardins |
 
 | ![https://github.com/aurelien-castel/DUT-Oct-2019-Jardin/blob/master/images/3.PNG?raw=true](https://github.com/aurelien-castel/DUT-Oct-2019-Jardin/blob/master/images/3.PNG?raw=true) | 
-|:--:| 
+| :--: | 
 | Fenêtre principale sur un jardin |
 
 | ![https://github.com/aurelien-castel/DUT-Oct-2019-Jardin/blob/master/images/4.PNG?raw=true](https://github.com/aurelien-castel/DUT-Oct-2019-Jardin/blob/master/images/4.PNG?raw=true) | 
@@ -46,5 +46,5 @@ Le projet avait pour but de créer une application de gestion de jardin en suiva
 | Calendrier des différentes actions d'un jardin |
 
 | ![https://github.com/aurelien-castel/DUT-Oct-2019-Jardin/blob/master/images/5.PNG?raw=true](https://github.com/aurelien-castel/DUT-Oct-2019-Jardin/blob/master/images/5.PNG?raw=true) | 
-|:--:| 
+| :--: | 
 | Le récapitulatif des actions effectuées pour une certaine date sur un jardin |
